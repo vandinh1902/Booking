@@ -133,7 +133,7 @@ export const useStyle = makeStyles((theme) => ({
     maxWidth: "100%",
     top: "0%",
     width: "100%",
-    background: `linear-gradient(to right bottom,rgba(239,212,101, 0.8), rgba(4,24,22, 1.0)), url(${background1})`,
+    background: `linear-gradient(to right bottom,rgba(154,149,128, 0.8), rgba(4,24,22, 1.0)), url(${background1})`,
     backgroundPosition: "50% 10%",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
