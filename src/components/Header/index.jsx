@@ -7,7 +7,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import shout from "./../../assets/shout.svg";
 import Logo2 from "./../../assets/web-logo.png";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
-import login from "./../../assets/login.svg";
+import login from "./../../assets/avatar.png";
 import { useStyles } from "./style";
 import { Box } from "@material-ui/core";
 import { useDispatch } from "react-redux";
@@ -265,9 +265,10 @@ export const Header = () => {
             style={{ textDecoration: "none", color: "#FAFAFA" }}
           >
             <Box display="flex" justifyContent="center">
-              <img src={login} width="30px" />
+              <img src={login} width="30px" style={{borderRadius:"25px", marginRight: "5px"}} />
+              <Typography style={{marginTop: "5px"}}>Đăng nhập</Typography>
             </Box>
-            <Typography>Đăng nhập</Typography>
+            
           </Link>
         </Box>
       );
