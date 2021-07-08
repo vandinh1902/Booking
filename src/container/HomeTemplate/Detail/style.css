@@ -1,0 +1,27 @@
+.background-filter::after {
+  /* -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px); */
+
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.background-filter {
+  position: relative;
+}
+
+.background {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Use for content that should not be blurred */
+.u-non-blurred {
+  position: relative;
+  z-index: 1;
+}
