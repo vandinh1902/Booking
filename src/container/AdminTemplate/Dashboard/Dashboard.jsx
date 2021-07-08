@@ -27,7 +27,7 @@ import MovieIcon from "@material-ui/icons/Movie";
 import QuanLiUsers from "./QuanLiUsers";
 import QuanLiMovie from "./QuanLiMovie";
 import QuanLiLichChieu from "./QuanLiLichChieu";
-
+import PowerSettingsNewIcon from "@material-ui/icons/PowerSettingsNew";
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -220,10 +220,14 @@ export default function Dashboard(props) {
           >
             Dashboard
           </Typography>
-          <IconButton color="inherit">
-            <Badge badgeContent={4} color="secondary">
-              <NotificationsIcon />
-            </Badge>
+          <IconButton
+            color="inherit"
+            onClick={() => {
+              localStorage.removeItem("ADMIN");
+              window.location.reload();
+            }}
+          >
+            <PowerSettingsNewIcon />
           </IconButton>
         </Toolbar>
       </AppBar>
