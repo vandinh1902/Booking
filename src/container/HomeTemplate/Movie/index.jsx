@@ -58,7 +58,7 @@ const Movie = () => {
 
   const sliceMovieList1 = [...movieList].slice(0, 15).reverse();
   const sliceMovieList2 = [...movieList].slice(16, 31);
-  const sliceMovieList3 = [...movieList].slice(32, movieList.length).reverse();
+  const sliceMovieList3 = [...movieList].slice(0,32, movieList.length).reverse();
 
   const renderMovieList3 = () => {
     return sliceMovieList3.map((movie, index) => {
