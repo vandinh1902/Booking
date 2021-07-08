@@ -10,14 +10,14 @@ export function fetchMovieDetailApiAction(maPhim) {
 
 export function fetchUsersCommentApiAction() {
   return axios({
-    url: `https://60865c3bd14a870017579260.mockapi.io/comment/comments`,
+    url: `https://60e7168f15387c00173e4a62.mockapi.io/comment/comments`,
     method: "GET",
   });
 }
 
 export function postUsersCommentApiAction(data) {
   return axios({
-    url: `https://60865c3bd14a870017579260.mockapi.io/comment/comments`,
+    url: `https://60e7168f15387c00173e4a62.mockapi.io/comment/comments`,
     method: "POST",
     data,
   });
