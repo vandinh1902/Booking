@@ -5,7 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
 import shout from "./../../assets/shout.svg";
-import Logo2 from "./../../assets/cinema.png";
+import Logo2 from "./../../assets/web-logo.png";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import login from "./../../assets/login.svg";
 import { useStyles } from "./style";
@@ -130,9 +130,9 @@ export const Header = () => {
                 <img src={shout} width="30px" />
               </Box>
               <Box>
-                <Link to="/promotion">
+                <Link to="/">
                   <Typography className={classes.titleForMobile}>
-                    Khuyến mãi
+                    Trang chủ
                   </Typography>
                 </Link>
               </Box>
@@ -307,12 +307,12 @@ export const Header = () => {
             <Box variant="h6" className={classes.title}>
               <Box style={{ margin: "0 1rem" }}>
                 <Link
-                  to="/promotion"
+                  to="/"
                   style={{ textDecoration: "none", color: "#FAFAFA" }}
                 >
                   <Box className={classes.navItems}>
                     {/* <img src={shout} width="30px" /> */}
-                    <Typography>Khuyến mãi</Typography>
+                    <Typography>Trang chủ</Typography>
                   </Box>
                 </Link>
               </Box>
