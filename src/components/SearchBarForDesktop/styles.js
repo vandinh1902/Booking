@@ -61,7 +61,7 @@ export const useStyles = makeStyles((theme) => ({
     position: "absolute",
     // width: "100%",
     top: "26%",
-    left: "50%",
+    right: "-50%",
     transform: "translate(-50%, 0)",
     padding: "0.5rem 1.5rem",
     backgroundColor: "rgba(231,71,243, 0.9)",
